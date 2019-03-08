@@ -6,10 +6,10 @@ var tableData = data;
 
 var tbody = d3.select("tbody");
 
-// Console.log the UFO weather data from data.js
+// Console.log the UFO data from data.js
 console.log(tableData);
-// Function to build the Table
 
+// Function to build the Table
 function buildTable(ufoData) {
     tbody.html("");
     // Step 1: Loop Through `data` and console.log each UFO object
