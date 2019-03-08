@@ -1,45 +1,45 @@
+// Joe J. Abuzaid
+// UC-Berkeley Data Analytics Bootcamp
+
 // from data.js
 var tableData = data;
 
 var tbody = d3.select("tbody");
 
-// Console.log the weather data from data.js
+// Console.log the UFO weather data from data.js
 console.log(tableData);
+// Function to build the Table
+
 function buildTable(ufoData) {
     tbody.html("");
-    // Step 1: Loop Through `data` and console.log each weather report object
+    // Step 1: Loop Through `data` and console.log each UFO object
     ufoData.forEach(function(dataRow) {
 
         console.log(dataRow) ;
     
-    // Step 2:  Use d3 to append one table row `tr` for each weather report object
-    // Don't worry about adding cells or text yet, just try appending the `tr` elements.
+    // Step 2:  Use d3 to append one table row `tr` for each UFO report object
         var row = tbody.append("tr");
     
-    // Step 3:  Use `Object.entries` to console.log each weather report value
+    // Step 3:  Use `Object.entries` to console.log each UFO report value
         Object.entries(dataRow).forEach(function([key, value]) {
             console.log(key, value);
     
-    // Object.keys(weatherReport) - ["weekday", "date", "high", "low"]
-    // Object.values(weathrReport) - ["sun", " July 1", 76, 63]
-    // Object.entries(weatherReport) - [["weekday", "Sun"], ["date", "July 1"]]
-    
-    // Step 4: Use d3 to append 1 cell per weather report value (weekday, date, high, low)
+    // Step 4: Use d3 to append 1 cell per UFO report value
             var cell = row.append("td");
     
     // Step 5: Use d3 to update each cell's text with
-    // weather report values (weekday, date, high, low)
+    // UFO report values
             cell.text(value);
         })
     })
-
-
 }
-
+// Calling the above function (buildTable)
 buildTable(tableData);
 
+// Using d3 to read the filter button
 d3.select("#filter-btn").on("click", handleClick);
 
+// function to handle the click and perform the filtering
 function handleClick() {
     d3.event.preventDefault();
     var date = d3.select("#datetime").property("value");
