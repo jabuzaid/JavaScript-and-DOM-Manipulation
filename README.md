@@ -1,4 +1,4 @@
-# Unit 14 | Assignment - JavaScript and DOM Manipulation
+JavaScript and DOM Manipulation
 
 ## Background
 
@@ -10,7 +10,7 @@ That's why we are hiring you. We need you to write code that will create a table
 
 You can handle this... right? The planet Earth needs to know what we have found!
 
-## Your Task
+## Task
 
 ### Level 1: Automatic Table and Date Search
 
@@ -22,7 +22,7 @@ You can handle this... right? The planet Earth needs to know what we have found!
 
 * Use a date form in your HTML document and write JavaScript code that will listen for events and search through the `date/time` column to find rows that match user input.
 
-### Level 2: Multiple Search Categories (Optional)
+### Level 2: Multiple Search Categories
 
 * Complete all of Level 1 criteria.
 
@@ -39,18 +39,6 @@ You can handle this... right? The planet Earth needs to know what we have found!
 ### Dataset
 
 * [UFO Sightings Data](StarterCode/static/js/data.js)
-
-### Assessment
-
-Your final product will be assessed on the following metrics:
-
-* Completion of all steps in chosen level
-
-* Visual attraction
-
-* Usability
-
-**Good luck!**
 
 - - -
 
